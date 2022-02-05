@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="icon" type="image/png" href="smile.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-title">Kanban Board</h1>
+    <!--  -->
+    <div class="drag-container">
+        <ul class="drag-list">
+            <!-- Backlog Column -->
+            <li class="drag-column backlog-column">
+                <span class="header">
+                    <h1>Backlog</h1>
+                </span>
+                <!-- Backlog list -->
+                <div id="backlog-content" class ="custom-scroll">
+                    <ul class="drag-item-list" id="backlog-list">
+
+                    </ul>
+                </div>
+                <!-- Add button group -->
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign">+</span>
+                        <span>Add item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item">
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- progress Column -->
+            <li class="drag-column progress-column">
+            <span class="header">
+                <h1>progress</h1>
+            </span>
+            <!-- progress list -->
+            <div id="progress-content" class ="custom-scroll">
+                <ul class="drag-item-list" id="progress-list">
+  
+                </ul>
+            </div>
+            <!-- Add button group -->
+            <div class="add-btn-group">
+                <div class="add-btn">
+                    <span class="plus-sign">+</span>
+                    <span>Add item</span>
+                </div>
+                <div class="add-btn solid">
+                    <span>Save Item</span>
+                </div>
+                <div class="add-container">
+                    <div class="add-item">
+
+                    </div>
+                </div>
+            </div>
+        </li>
+                <!-- compplete Column -->
+    <li class="drag-column complete-column">
+        <span class="header">
+            <h1>complete</h1>
+        </span>
+        <!-- complete list -->
+        <div id="complete-content" class ="custom-scroll">
+            <ul class="drag-item-list" id="complete-list">
+
+            </ul>
+        </div>
+        <!-- Add button group -->
+        <div class="add-btn-group">
+            <div class="add-btn">
+                <span class="plus-sign">+</span>
+                <span>Add item</span>
+            </div>
+            <div class="add-btn solid">
+                <span>Save Item</span>
+            </div>
+            <div class="add-container">
+                <div class="add-item">
+
+                </div>
+            </div>
+        </div>
+    </li>
+            <!-- on-hold Column -->
+            <li class="drag-column on-hold-column">
+            <span class="header">
+                <h1>on-hold</h1>
+            </span>
+            <!-- on-hold list -->
+            <div id="on-hold-content" class ="custom-scroll">
+                <ul class="drag-item-list" id="on-hold-list">
+
+                </ul>
+            </div>
+            <!-- Add button group -->
+            <div class="add-btn-group">
+                <div class="add-btn">
+                    <span class="plus-sign">+</span>
+                    <span>Add item</span>
+                </div>
+                <div class="add-btn solid">
+                    <span>Save Item</span>
+                </div>
+                <div class="add-container">
+                    <div class="add-item">
+
+                    </div>
+                </div>
+            </div>
+        </li>
+        </ul>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
